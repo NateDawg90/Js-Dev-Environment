@@ -35,7 +35,8 @@ export default {
     // Create HTML file that has reference to bundle.js
     new HtmlWebpackPlugin({
       template: 'src/index.html',
-      inject: true
+      inject: true,
+      trackJSToken: '42b5faa63ddd48e28edef288d6b7a89a'
     }),
   ],
   module: {
