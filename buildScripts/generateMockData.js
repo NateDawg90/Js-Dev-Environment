@@ -6,8 +6,7 @@ import chalk from 'chalk';
 
 /* eslint-disable no-console */
 
-// jsf.extend('faker', () => require('faker'));
-
+jsf.extend('faker', () => require('faker'));
 const json = JSON.stringify(jsf.generate(schema));
 
 fs.writeFile("./src/api/db.json", json, err => {
