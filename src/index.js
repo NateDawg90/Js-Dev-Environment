@@ -1,5 +1,8 @@
 import './index.css';
 import {getUsers} from './api/userApi';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import App from './App';
 
 getUsers().then(res => {
   let usersBody = '';
@@ -15,3 +18,6 @@ getUsers().then(res => {
 
   global.document.getElementById('users').innerHTML = usersBody;
 })
+
+// ReactDOM.render(<App />, document.getElementById('root'));
+

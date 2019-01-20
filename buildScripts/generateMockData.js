@@ -5,11 +5,10 @@ import fs from 'fs';
 import chalk from 'chalk';
 
 /* eslint-disable no-console */
-// const json = JSON.stringify(jsf(schema));
 
-jsf.extend('faker', () => require('faker'));
+// jsf.extend('faker', () => require('faker'));
 
-const json = JSON.stringify(jsf(schema));
+const json = JSON.stringify(jsf.generate(schema));
 
 fs.writeFile("./src/api/db.json", json, err => {
   if (err) {
